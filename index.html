@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style/style.css">
+        <!-- animated css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body style="background-image: url(images/photo1.avif); background-repeat: no-repeat; background-attachment: fixed;
+    background-size: cover; ">
+            <!-- Navigation bar -->
+    <nav class="flex-header">
+        <div class="header">
+            <div>
+                <div class="name">Debora Rutayuga</div>
+                <div class="detail">Software Developer</div>
+            </div>
+            <div class="flex-list" id="sidemenu">
+                <div><a href="#content" class="list">Home</a></div>
+                <div><a href="#about" class="list">About</a></div>
+                <div><a href="#projects" class="list">Projects</a></div>
+                <div><a href="#contact" class="list">Contact</a></div>
+                <img src="menu-icons/cross-icon.png" class="menu-icon" onclick="closemenu()">
+            </div>
+            <img src="menu-icons/menu-icon.png" class="menu-icons" onclick="openmenu()">
+        </div>
+    </nav>
+    
+    <!-- Content section -->
+    <section id="content">
+    <div class="content-flex">
+        <div class="flex-introduction">
+            <div class="intro">Greeting Everyone</div>
+            <div class="introduction">Welcome to My Portfolio</div>
+            <div class="introduction-info">I'm a Software Developer with experience in HTML, 
+                CSS and JavaScript development.</div>
+        </div>
+    </div>
+</section>  
+
+    <!-- About section -->
+    <section id="about">
+        <div class="about-flex">
+            <div class="image-container js-image">
+                <img src="images/mypicture.png" alt="">
+            </div>
+            
+            <div class="about-container js-about-container">
+                <h1 class="js-about">About Me</h1>
+                <p>My name is Debora Rutayuga. I am 23 years old. Bachelor of science in computer systems and networks at Ardhi University, now trying to specialize 
+                    in software development. I'm familiar and have great experience with some of programming languages such as CSS, HTML, JavaScript, 
+                    PHP, Python and C++. I am able to develop websites and applications.
+                </p> 
+    
+    
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p> 
+    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>MySQL</span><br>Relational Database</li>
+                        <li><span>Web development</span><br>HTML, CSS, JavaScript, PHP</li>
+                        <li><span>Other Programming</span><br>Python and C++</li>
+                    </ul>
+    
+                </div>
+    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Science-Computer Systems and Networks</span><br>Ardhi University, October 2023</li>
+                        <li><span> Advance Certificate for Secondary Education</span><br>Barbro Johansson Secondary School, May 2020</li>
+                        <li><span>Certificate for Secondary Education</span><br>Barbro Johansson Secondary School, November 2017</li>
+                    </ul>
+    
+                </div>
+            </div>            
+        </div>
+    </section>
+
+
+    <!-- Project section -->
+    <section id="projects">
+        <div class="project-flex">
+            <h1 class="js-projects">Projects</h1>
+            <div class="projects-list">
+                <div class="project-box js-box-1">
+                    <h2>Solar system design project</h2>
+                    <p>This project used HTML and CSS only to design the solar system, whereby the earth revolves around the sun and rolates
+                        around the moon.</p>
+                    <a href="https://deborarutayuga.github.io/solar-system/">View sample</a>
+                </div>
+                <div class="project-box js-box-2">
+                    <h2>Rock, paper, scissors project</h2>
+                    <p>this project was created using HTML, CSS and JavaScript, whereby the player can play manually or automatically, also
+                         can reset scores.
+                    </p>
+                    <a href=" https://deborarutayuga.github.io/rock-paper-scissors-website/">View sample</a>
+                </div>
+                <div class="project-box js-box-3">
+                    <h2>Calculator project</h2>
+                    <p>this project was created using HTML, CSS and JavaScript, whereby the user can use it to calculate simple mathematics 
+                        calculations. </p>
+                    <a href="https://deborarutayuga.github.io/debora_calculator-website/">View sample</a>
+                </div>
+                <div class="project-box js-box-4">
+                    <h2>Coin flip project</h2>
+                    <p>this project was created using HTML, CSS and JavaScript, whereby the player can  choose head or tail,
+                         and able to reset the scores.  </p>
+                    <a href="https://deborarutayuga.github.io/coin-flip/">View sample</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        
+
+
+<!-- Contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left js-contact-left">
+                <h1 class="js-contact">Contact Me</h1>
+                <p><img src="contact-icons/email.png" class="contact-icons"> rutayugadeborak@gmail.com</p>
+                <p><img src="contact-icons/phone.png" class="contact-icons">+255 718 665 044</p>
+                <p><img src="contact-icons/address.png" class="contact-icons"> Kawe, Dar-Es-Salaam</p>
+                <a href="document/DEBORA'S CV.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right js-contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; debora rutayuga</p>
+
+    </div>
+
+</div>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/animate.js"></script>
+
+</body>
+</html>
